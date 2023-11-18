@@ -30,6 +30,8 @@ CREATE TABLE IF NOT EXISTS cliente (
 	email VARCHAR(255) NOT NULL,
     dni INT(8) NOT NULL,
 	activo BOOLEAN,
+	id_usuario INT(10),
+	FOREIGN KEY(id_usuario) REFERENCES usuario(id_usuario),
     PRIMARY KEY (id_cliente)
 );
 
