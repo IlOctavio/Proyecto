@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2023-11-18T11:38:55.935Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="Ph47nAWuD1U0QZDbPuD2" version="22.0.3" type="device" pages="3">
+<mxfile host="Electron" modified="2023-11-12T00:28:57.476Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="76yQjWPg58tKWBz2OA5O" version="22.0.3" type="device" pages="3">
   <diagram id="7ZUw3-nz7Id0MPlwB87d" name="DER">
     <mxGraphModel dx="1644" dy="1641" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -61,7 +61,7 @@
         <mxCell id="FToeubQnYS6d0m1Xm-hV-21" value="N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="445" y="-594" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="FToeubQnYS6d0m1Xm-hV-22" value="N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="FToeubQnYS6d0m1Xm-hV-22" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="505" y="-305.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="FToeubQnYS6d0m1Xm-hV-25" value="N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -248,7 +248,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="uPW4fH39tkfDHg7v49cV-41" value="activo" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="230" y="-560" width="100" height="40" as="geometry" />
+          <mxGeometry x="220" y="-539" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="uPW4fH39tkfDHg7v49cV-42" value="activo" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="640" y="-190" width="100" height="40" as="geometry" />
@@ -322,27 +322,6 @@
             <mxPoint x="1000" y="-160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="27JKMh-Bf8UqKTvHXsRx-1" value="TIENE" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="365" y="-440" width="80" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="27JKMh-Bf8UqKTvHXsRx-4" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="27JKMh-Bf8UqKTvHXsRx-1" target="FToeubQnYS6d0m1Xm-hV-22">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="560" y="-380" as="sourcePoint" />
-            <mxPoint x="610" y="-430" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="27JKMh-Bf8UqKTvHXsRx-5" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="27JKMh-Bf8UqKTvHXsRx-1" target="vpyvZQCA5kQbZ2K2rofk-3">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="560" y="-380" as="sourcePoint" />
-            <mxPoint x="610" y="-430" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="27JKMh-Bf8UqKTvHXsRx-6" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="190" y="-534" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="27JKMh-Bf8UqKTvHXsRx-7" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="540" y="-310.5" width="60" height="30" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -351,7 +330,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="KMQbZ3jNF2aMOa0rSq7P-1" value="&lt;h1&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Definición de las tablas:&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;USUARIO (&lt;u&gt;id_usuario&lt;/u&gt;, &lt;/b&gt;razon_social, cuit, username, password, tipo, activo&lt;b&gt;)&lt;/b&gt;&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;FACTURA(&lt;/b&gt;&lt;u style=&quot;font-weight: bold;&quot;&gt;id_factura&lt;/u&gt;, fecha, imp_neto, iva, imp_total, id_cliente,&amp;nbsp; id_usuario)&lt;/font&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;FK FACTURA(id_cliente) referencia a CLIENTE(id_cliente)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;FK FACTURA(id_usuario) referencia a USUARIO(id_usuario)&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;PRODUCTO(&lt;u&gt;id_producto&lt;/u&gt;, &lt;/b&gt;unidad_medida, descripcion, cantidad, precio, tipo, activo)&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;CLIENTE(&lt;/b&gt;&lt;u style=&quot;font-weight: bold;&quot;&gt;id_cliente&lt;/u&gt;, nombre, apellido, email, dni,activo, id_usuario)&lt;/font&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;FK CLIENTE(id_usuario) referencia a USUARIO(id_usuario)&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;COMPUESTA_POR(&lt;/b&gt;&lt;b style=&quot;text-decoration-line: underline;&quot;&gt;id_factura, id_producto,&lt;/b&gt;&lt;b style=&quot;&quot;&gt;&amp;nbsp;&lt;/b&gt;cantidad, precio_unitario)&lt;/font&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;FK COMPUESTA_POR(id_factura) referencia a FACTURA(id_factura)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;FK COMPUESTA_POR(id_producto) referencia a PRODUCTO(id_producto)&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+        <mxCell id="KMQbZ3jNF2aMOa0rSq7P-1" value="&lt;h1&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Definición de las tablas:&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;USUARIO (&lt;u&gt;id_usuario&lt;/u&gt;, &lt;/b&gt;razon_social, cuit, username, password, tipo, activo&lt;b&gt;)&lt;/b&gt;&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;FACTURA(&lt;/b&gt;&lt;u style=&quot;font-weight: bold;&quot;&gt;id_factura&lt;/u&gt;, fecha, imp_neto, iva, imp_total, id_cliente, id_producto, id_usuario)&lt;/font&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;FK FACTURA(id_cliente) referencia a CLIENTE(id_cliente)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;FK FACTURA(id_producto) referencia a PRODUCTO(id_producto)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;FK FACTURA(id_usuario) referencia a USUARIO(id_usuario)&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;PRODUCTO(&lt;u&gt;id_producto&lt;/u&gt;, &lt;/b&gt;unidad_medida, descripcion, cantidad, precio, tipo, activo)&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;CLIENTE(&lt;/b&gt;&lt;u style=&quot;font-weight: bold;&quot;&gt;id_cliente&lt;/u&gt;, nombre, apellido, email, dni,activo)&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;COMPUESTA_POR(&lt;/b&gt;&lt;b style=&quot;text-decoration-line: underline;&quot;&gt;id_factura, id_producto,&lt;/b&gt;&lt;b style=&quot;&quot;&gt;&amp;nbsp;&lt;/b&gt;cantidad, precio_unitario)&lt;/font&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;FK COMPUESTA_POR(id_factura) referencia a FACTURA(id_factura)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;FK COMPUESTA_POR(id_producto) referencia a PRODUCTO(id_producto)&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="70" y="40" width="910" height="610" as="geometry" />
         </mxCell>
       </root>

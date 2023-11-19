@@ -6,15 +6,11 @@ CREATE TABLE IF NOT EXISTS producto(
 	unidad_medida VARCHAR(20) NOT NULL,
 	descripcion VARCHAR(255) NOT NULL,
 	cantidad INT(10) NOT NULL,
-	precio DOUBLE PRECISION NOT NULL,
+	precio DOUBLE NOT NULL,
 	tipo VARCHAR(8) NOT NULL,
 	activo BOOLEAN,
 	PRIMARY KEY (id_producto)
-) 
-
-INSERT INTO person VALUES
-(1, 'Juan', 'Álvarez' , 12345678, 'juan@mail.com'),
-(2, 'Ana', 'Perez' , 87654321, 'ana@mail.com');
+);
 
 CREATE TABLE IF NOT EXISTS usuario(
     id_usuario INT(10) NOT NULL AUTO_INCREMENT,
@@ -25,11 +21,7 @@ CREATE TABLE IF NOT EXISTS usuario(
 	tipo VARCHAR(5) NOT NULL,
 	activo BOOLEAN,
     PRIMARY KEY (id_usuario)
-) 
-
-INSERT INTO users VALUES
-(1, 'carlos', 'pass'),
-(2, 'ana', 'pass');
+);
 
 CREATE TABLE IF NOT EXISTS cliente (
     id_cliente INT(10) NOT NULL AUTO_INCREMENT,
@@ -38,19 +30,34 @@ CREATE TABLE IF NOT EXISTS cliente (
 	email VARCHAR(255) NOT NULL,
     dni INT(8) NOT NULL,
 	activo BOOLEAN,
+	id_usuario INT(10),
+	FOREIGN KEY(id_usuario) REFERENCES usuario(id_usuario),
     PRIMARY KEY (id_cliente)
-) 
+);
 
-CREATE TABLE IF NOT EXISTS client(
-    id INT(10) NOT NULL AUTO_INCREMENT,
-    name VARCHAR(255) NOT NULL,
-    PRIMARY KEY (id),
-    id_user INT(10),
-    FOREIGN KEY(id_user) REFERENCES users(id) 
-) 
+CREATE TABLE IF NOT EXISTS factura (
+	id_factura INT(10) NOT NULL AUTO_INCREMENT,
+	fecha DATE NOT NULL,
+	imp_neto DOUBLE,
+	iva DOUBLE NOT NULL,
+	imp_total DOUBLE,
+	PRIMARY KEY (id_factura),
+	id_usuario INT(10),
+	id_cliente INT(10),	
+    FOREIGN KEY(id_usuario) REFERENCES usuario(id_usuario),
+	FOREIGN KEY(id_cliente) REFERENCES cliente(id_cliente)
+);
 
-INSERT INTO client VALUES
-(1, 'juan', 1),
-(2, 'maria', 1),
-(3, 'marta', 2),
-(4, 'jose', 2);
+CREATE TABLE IF NOT EXISTS compuesta_por (
+	id_factura INT(10) NOT NULL,
+	id_producto INT(10) NOT NULL,
+	cantidad INT(10) NOT NULL,
+	precio_unitario DOUBLE NOT NULL,
+	PRIMARY KEY (id_factura, id_producto),
+	FOREIGN KEY(id_factura) REFERENCES factura(id_factura),
+	FOREIGN KEY(id_producto) REFERENCES producto(id_producto)
+);
+
+
+
+
