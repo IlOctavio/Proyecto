@@ -1,7 +1,10 @@
+# Importaciones
 from api.db.db import mysql, DBError
 from flask import jsonify
 
+# Clase Cliente
 class Cliente():
+    # Esquema para validar los datos 
     schema = {
         "id_cliente": int,
         "nombre": str,
@@ -12,6 +15,7 @@ class Cliente():
         "id_usuario": int
     }
     
+    # Metodo para validar el esquema de los datos
     def check_data_schema(data):
         if data == None or type(data) != dict:
             return False
@@ -24,6 +28,7 @@ class Cliente():
                 return False
         return True
 
+    # Constructor de la clase
     def __init__(self, row):
         self._id_cliente = row[0]
         self._nombre = row[1]
@@ -33,7 +38,7 @@ class Cliente():
         self._activo = row[5]
         self._id_usuario = row[6]
         
-
+    # Metodo para convertir los datos en formato JSON
     def to_json(self):
         return {
             "id_cliente": self._id_cliente,
@@ -45,6 +50,7 @@ class Cliente():
             "id_usuario": self._id_usuario
         }
     
+    # Metodo para preguntar si existe un cliente en la BD
     def client_exists(dni):
         cur = mysql.connection.cursor()
         
@@ -53,6 +59,7 @@ class Cliente():
         
         return cur.rowcount > 0
 
+    # Metodo para la creación de un Cliente en la BD 
     def create_client(data):
         if Cliente.check_data_schema(data):
             # check if client already exists
@@ -70,6 +77,7 @@ class Cliente():
             raise DBError("Error creating client - no row inserted")
         raise TypeError("Error creating client - wrong data schema")
     
+    # Metodo para la actualización de un Cliente en la BD
     def update_client(id, data):
         if Cliente.check_data_schema(data):
             cur = mysql.connection.cursor()
@@ -80,15 +88,17 @@ class Cliente():
             raise DBError("Error updating client - no row updated")
         raise TypeError("Error updating client - wrong data schema")
     
+    # Metodo para obtener un cliente por su id 
     def get_client_by_id(id):
         cur = mysql.connection.cursor()
         cur.execute('SELECT * FROM cliente WHERE id_cliente = {0}'.format(id))
         data = cur.fetchall()
         if cur.rowcount > 0:
-            print("data[0]: ", data[0])
+            #print("data[0]: ", data[0])
             return Cliente(data[0]).to_json()
         raise DBError("Error getting client by id - no row found")
     
+    # Metodo para eliminar a un cliente de la BD
     def delete_client(id):
         data = Cliente.get_client_by_id(id)
         cur = mysql.connection.cursor()
