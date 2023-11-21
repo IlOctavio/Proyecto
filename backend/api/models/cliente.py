@@ -102,8 +102,7 @@ class Cliente():
     def delete_client(id):
         data = Cliente.get_client_by_id(id)
         cur = mysql.connection.cursor()
-        cur.execute('UPDATE cliente SET nombre = %s, apellido = %s, email = %s, dni = %s, activo= %s, id_usuario = %s WHERE id_cliente = %s', (data["nombre"], data["apellido"], data["email"], data["dni"], 0, data["id_usuario"], id))
-        mysql.connection.commit()
+        cur.execute('UPDATE cliente SET activo=0 WHERE id_cliente = {0}'.format(id))
         if cur.rowcount > 0:
             return Cliente.get_client_by_id(id)
         raise DBError("Error deleting client - no row updated")
