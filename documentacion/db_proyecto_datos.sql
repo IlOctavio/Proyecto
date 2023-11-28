@@ -72,7 +72,14 @@ INSERT INTO cliente VALUES
 -- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO producto VALUES
-( 
+(1,'un','monitor 19"','Monitor LCD marca Pirulo',20,25000,'producto',1),
+(2,'un','gabinete ATX','Gabinete ATX con fuente 450W',30,10000,'producto',1),
+(3,'un','core i3 11500','Procesador Intel Core I3 11500',25,50000,'producto',1),
+(4,'un','DDR4 8GB', ' gabinete ATX','Gabinete ATX con fuente 450W',30,3000,'producto',1),
+(5,'un','armado','armado de pc',100,12000,'servicio',1),
+(6,'un','instalacion S.O.', 'instalacion del S. O.', 100,10000,'servicio',1),
+(7,'un','formateo','formateo e inst. S.O.',100,15000,'servicio',1);
+
 
 
 
